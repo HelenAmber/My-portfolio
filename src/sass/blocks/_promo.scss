@@ -11,7 +11,7 @@
     &__subtitle {
         position: relative;
         @include before_circle;
-        padding-left: 10px;
+        padding-left: 20px;
         z-index: 2;
     }
     &__btns {
