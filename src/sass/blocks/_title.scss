@@ -19,4 +19,19 @@
     &_fz48 {
         font-size: 48px;
     }
+    .section__title {
+        .title_fz36 {
+            text-align: center;
+            line-height: 60px;
+            margin-top: 15px;
+        }
+        .title_fz16{
+            text-align: center;
+            width: 80px;
+            margin: 0 auto;
+        }
+        .separator {
+            margin: 20px auto 0 auto;
+        }
+    }
 }
