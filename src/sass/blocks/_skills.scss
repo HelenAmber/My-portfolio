@@ -2,17 +2,16 @@
     min-height: 1024px;
     padding-top: 120px;
     .title_fz36 {
-        text-align: center;
-        line-height: 60px;
         margin-top: 15px;
     }
-    .title_fz16{
-        text-align: center;
-        width: 80px;
+    .title_fz18{
+        width: 115px;
         margin: 0 auto;
     }
-    .separator {
-        margin: 20px auto 0 auto;
+    .title_fz14 {
+        margin-top: 10px;
+        padding-top: 10px;
+        text-align: center;
     }
     &__items{
        display: grid;
@@ -24,12 +23,14 @@
        margin-top: 60px;
     }
     &__item {
-        padding: 30px;
+        padding: 25px 30px;
         border: 1px solid black;
         &__img {
-            width: 46px;
-            height: 65px;
-            margin-bottom: 20px;
+            display: block;
+            width: 85px;
+            height: 85px;
+            // margin-bottom: 20px;
+            margin: 0 auto;
         }
         &__descr {
             font-weight: 500;
@@ -50,10 +51,6 @@
             display: flex;
             justify-content: space-between;
             padding-bottom: 23px;
-        }
-        .title_fz14 {
-            margin-top: 5px;
-            padding-top: 10px;
         }
         &__interest {
             margin-top: 8px;

@@ -2,14 +2,20 @@
     min-height: 600px;   
     padding: 100px 0 90px 0;
     &__wrapper {
-       // height: 600px;
         padding: 0 35px 0 52px;
         display: grid;
         grid-template-columns: 400px 585px;
         justify-content: space-between;
         img {
-            width: 350px;
+            width: 100%;
         }
+    }
+    .title_fz36 {
+        text-align: left;
+        margin-top: 15px;
+    }
+    &__img {
+        align-items: center;
     }
     &__social, &__subtitle {
         margin-top: 20px;
@@ -24,7 +30,14 @@
             width: 30px;
             height: 30px;
             border-radius: 100%;
+            &:hover {
+                transform: scale(1.2);
+                transition: all 0.4s;
+            }
         } 
+    }
+    .separator {
+        margin-left: 0;
     }
     &__form {
         margin-top: 30px;

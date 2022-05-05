@@ -5,14 +5,8 @@
     padding-top: 45px;
     text-align: left;
     color: rgb(230, 240, 245);
-    &__title {    
-        margin-top: 10px;
-    }
-    &__subtitle {
-        position: relative;
-        @include before_circle;
-        padding-left: 20px;
-        z-index: 2;
+    .title_fz18 {
+        text-shadow: 5px 5px 5px black;
     }
     &__btns {
         margin-top: 375px;

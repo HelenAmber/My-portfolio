@@ -5,9 +5,8 @@
         line-height: 60px;
         margin-top: 15px;
     }
-    .title_fz16{
-        text-align: center;
-        width: 80px;
+    .title_fz18{
+        width: 105px;
         margin: 0 auto;
     }
     .separator {
@@ -82,4 +81,9 @@
             line-height: 18px;
         }
     }
+    .section__subtitle {
+        img {
+            padding-top: 10px;
+        }
+    }  
 }
