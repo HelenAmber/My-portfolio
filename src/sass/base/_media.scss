@@ -1,0 +1,66 @@
+@media (max-width: 1439px) {
+    .sidepanel {
+        display: none;
+    }
+}
+
+
+@media (max-width: 1200px) {  
+        .container {
+            width: 0;
+            max-width: 960px;
+            padding: 45px;
+        }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+        padding: 35px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+        margin: 0;
+        padding: 0 0 30px 20px;
+        .title_fz48 {
+            font-size: 43px;
+            line-height: 49px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .humburger {
+        right: 20px;
+    }
+    .container {
+        max-width: 100%;
+        padding: 100px 10px 160px 10px;
+        .title_fz18 {
+            font-size: 16px;
+            width: 230px;
+            margin: 0 auto;
+        }
+        .title_fz48 {
+            font-size: 31px;
+            line-height: 40px;
+            text-align: center;
+        }
+        .promo__btns {
+            justify-content: space-between;
+            margin: 30px 20px 0 20px;
+        }
+    }
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 30px;
+        }
+        &__link {
+            
+        }
+    }
+}
