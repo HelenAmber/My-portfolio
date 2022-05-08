@@ -7,9 +7,20 @@
 
 @media (max-width: 1200px) {  
         .container {
-            width: 0;
             max-width: 960px;
-            padding: 45px;
+            padding: 45px 20px;
+        }
+        .about {
+            &__wrapper {
+                grid-template-columns: 400px 500px;
+                column-gap: 30px;
+                row-gap: 40px;
+            }
+            .skills__wrapper {
+                grid-template-columns: repeat(2, 240px);
+                grid-template-rows: repeat(2, 170px);;
+                column-gap: 10px;
+            }
         }
 }
 
@@ -18,27 +29,76 @@
         max-width: 720px;
         padding: 35px 0;
     }
+    .about {
+        &__wrapper {
+            grid-template-columns: 300px 380px;
+            column-gap: 30px;
+        }
+        .title_fz36 {
+            font-size: 32px;
+            margin-bottom: 0;
+        }
+        &__skills {
+            .skills__wrapper {
+                grid-template-columns: 380px;
+                grid-template-rows: repeat(3, 115px);
+                row-gap: 15px;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
     .container {
         max-width: 540px;
         margin: 0;
-        padding: 0 0 30px 20px;
+        padding: 0;
         .title_fz48 {
             font-size: 43px;
             line-height: 49px;
         }
     }
+    .promo{
+        padding-bottom: 20px;
+    }
+    .about {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template-columns: 1fr;
+            grid-template-rows: 500px auto auto;
+        }
+        &__myphoto {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+            img {
+                object-fit: none;
+            }
+        }
+        &__myinfo {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;        
+        }
+        &__skills {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
+        .skills__wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 150px 150px;
+        }
+    }    
 }
 
 @media (max-width: 576px) {
-    .humburger {
-        right: 20px;
-    }
     .container {
         max-width: 100%;
+    }
+    .promo {
         padding: 100px 10px 160px 10px;
+        .humburger {
+            right: 20px;
+        }
         .title_fz18 {
             font-size: 16px;
             width: 230px;
@@ -59,8 +119,27 @@
             width: 250px;
             padding-left: 30px;
         }
-        &__link {
-            
+    }    
+
+    .about {
+        padding: 20px 10px;
+        .title_fz18 {
+            margin: 0;
+        }
+        .title_fz36 {
+            margin-top: 0;
+            font-size: 28px;
+        }
+        .separator {
+            margin: 0;
+        }
+        &__skills {
+            margin-top: 10px;
+            .skills__wrapper {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 115px);
+                row-gap: 15px;
+            }
         }
     }
 }

@@ -5,7 +5,7 @@
     &__wrapper {
         display: grid;
         grid-template-columns: 430px 710px;
-        grid-template-rows: 200px 400px;
+        grid-template-rows: 250px 400px;
         grid-auto-rows: minmax(100px, auto);
         column-gap: 70px;
         row-gap: 40px;
@@ -53,7 +53,7 @@
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 150px 150px;
             column-gap: 20px;
-            row-gap: 20px;
+            row-gap: 30px;
         }
     }
     &__skills_item {
