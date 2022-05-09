@@ -109,7 +109,16 @@
 
         <div class="about__wrapper">
             
-            <div class="about__myphoto"><img src="img/my_photo.jpg" alt="myphoto"></div>
+            <div class="about__myphoto">
+                <!-- <img srcset="img/my_photo_mini.jpg 300w, img/my_photo.jpg 400w" 
+                     sizes="(max-width: 576px) 280px, (min-width: 577px) 400px"            
+                     src="img/my_photo.jpg" alt="myphoto"> -->
+                <picture>
+                    <source media="(max-width: 768px)" srcset="img/my_photo_mini.jpg">
+                    <source media="(min-width: 767px)" srcset="img/my_photo.jpg">
+                    <img src="img/my_photo.jpg" alt="myphoto">
+                </picture>
+            </div>
             
             <div class="about__myinfo">
                 <div class="title title_fz18 section__subtitle">Про мене</div>
