@@ -1,0 +1,12 @@
+@keyframes chevron_up {
+    from {
+        transform: scale(1);
+     }
+    50% {
+        transform: scale(1.4);
+        transform: translateY(-50px);  //translate3d(12px, 50%, 3em);
+     }
+    to {
+       transform: scale(1);
+    }
+}
