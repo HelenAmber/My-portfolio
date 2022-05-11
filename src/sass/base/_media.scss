@@ -69,6 +69,14 @@
                 font-size: 12px;
             }
         }
+        .page_up {
+            right: 10px;
+            bottom: 20px;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
 }
 
 @media (max-width: 992px) {
@@ -364,6 +372,19 @@
         }
         &__policy {
             justify-content: center;
+        }
+    }
+    .page_up {
+        background-color: rgba(95, 49, 3, 0.7);
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        justify-items: center;
+        img{
+            display: block;
+            margin: 10px auto;
+            width: 30px;
+            height: 30px;
         }
     }
 }
