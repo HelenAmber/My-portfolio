@@ -1,6 +1,7 @@
 .myskills {
     min-height: 1024px;
-    padding-top: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     .title_fz36 {
         margin-top: 15px;
     }
@@ -36,6 +37,12 @@
             font-size: 13px;
             line-height: 18px;
             margin-top: 15px;
+        }
+        &:hover {
+            filter: grayscale(50%);
+            transform: scale(1.05);
+            transition: all 0.6s;
+            background: linear-gradient(rgb(165, 201, 122), rgb(223, 203, 217));
         }
     }
     &__progress {
